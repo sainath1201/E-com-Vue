@@ -1,7 +1,7 @@
 #nav-background {
   background-color: aliceblue;
   position: fixed;
-  width: 100%;
+  width: 100%
 }
 #product-displays {
  display: grid;
