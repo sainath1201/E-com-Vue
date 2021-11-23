@@ -14,18 +14,18 @@
       <nav class="navbar"  id="nav-background">
         <div class="container" >
           <div class="navbar-brand">
-            <a class="navbar-item" @click="isShowingCart = false">
+            <a class="navbar-item" @click="isShowingCart = false, showNav = false">
               <p class="is-size-3">
                 mystore.com
               </p>
             </a>
-            <span class="navbar-burger" data-target="navbarMenuHeroA">
+            <a class="navbar-burger" v-on:click="showNav = !showNav" v-bind:class="{ 'is-active' : showNav }"  id="navbarMenuHeroA">
               <span></span>
               <span></span>
               <span></span>
-            </span>
+            </a>
           </div>
-          <div id="navbarMenuHeroA" class="navbar-menu">
+          <div id="navbarMenuHeroA" class="navbar-menu" v-bind:class="{ 'is-active' : showNav }">
             <div class="navbar-end">
               <a class="navbar-item is-active">
                 {{cart.items.length}} items in cart

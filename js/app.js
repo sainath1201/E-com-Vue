@@ -1,6 +1,7 @@
 new Vue({
   el:'#app',
   data : {
+    showNav:false,
    products: [
      {
          id: 1,
