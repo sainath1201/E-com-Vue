@@ -1,0 +1,21 @@
+#nav-background {
+  background-color: aliceblue;
+  position: fixed;
+  width: 100%;
+}
+#product-displays {
+ display: grid;
+ grid-template-columns: repeat(3, 350px [col-start]);
+ grid-gap: 50px;
+ justify-content: center;
+ padding-top: 10%;
+}
+.has{
+  color: red;
+}
+.view{
+  width: 100%;
+}
+.back{
+  background-color:aliceblue;
+}
